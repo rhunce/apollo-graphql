@@ -1,9 +1,10 @@
-function App() {
+import ExchangeRates from './ExchangeRates'
+
+export default function App() {
   return (
-    <div className="App">
-      Hello, World!
+    <div>
+      <h2>My first Apollo app 🚀</h2>
+      <ExchangeRates />
     </div>
   );
 }
-
-export default App;
