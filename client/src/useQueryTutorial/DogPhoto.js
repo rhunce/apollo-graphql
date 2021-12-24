@@ -9,7 +9,9 @@ export default function DogPhoto({ breed }) {
 			variables: { breed },
 			// pollInterval: 3000,
 			notifyOnNetworkStatusChange: true,
-			errorPolicy: "none" /* <-- default... or "all" */
+			errorPolicy: 'none', // <-- default ... or "all"
+			fetchPolicy: 'network-only', // Used for first execution
+			nextFetchPolicy: 'cache-first', // Used for subsequent executions
 		}
 	);
 

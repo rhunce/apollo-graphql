@@ -27,3 +27,12 @@ export const GET_DOG_PHOTO = gql`
     }
   }
 `;
+
+export const GET_TODOS = gql`
+	{
+		todos {
+			id
+			type
+		}
+	}
+`;
