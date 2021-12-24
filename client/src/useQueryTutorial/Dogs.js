@@ -3,7 +3,7 @@ import { GET_DOGS } from "../queries.js";
 
 export default function Dogs({ onDogSelected }) {
   const { loading, error, data } = useQuery(GET_DOGS);
-  console.log('DATA: ', data);
+  console.log('Dogs DATA: ', data);
 
   if (loading) return 'Loading...';
   if (error) return `Error! ${error.message}`;
