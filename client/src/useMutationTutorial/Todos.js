@@ -19,7 +19,6 @@ export default function Todos() {
 						if (!input.value.trim()) {
 							return;
 						}
-
 						input.value = '';
 					}}
 				>
